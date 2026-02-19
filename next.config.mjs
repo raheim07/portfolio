@@ -1,16 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export', // 👈 VERY IMPORTANT
+const repoName = "portfolio" // EXACT GitHub repo name
 
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+const nextConfig = {
+  output: "export",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
+  trailingSlash: true,
 
   images: {
     unoptimized: true,
   },
 
-  basePath: '/portfolio', // 👈 replace with your repo name
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 }
 
 export default nextConfig
