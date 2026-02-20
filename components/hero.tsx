@@ -63,7 +63,7 @@ export function Hero() {
             Junior Data Engineer
           </p>
           <h1 className="mb-4 text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl">
-            <span className="text-balance">Raheim Hoilett</span>
+            <span className="text-balance">Raheim R Hoilett</span>
           </h1>
           <p className="mb-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
             Junior Data Engineer with a BSc in Computer Science, focused on creating data-driven systems through 
