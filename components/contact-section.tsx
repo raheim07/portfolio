@@ -63,57 +63,52 @@ export function ContactSection() {
 
           {/* Contact form */}
           <form
-            className="glass flex flex-col gap-4 rounded-xl p-6"
             name="contact"
             method="POST"
             data-netlify="true"
             className="glass flex flex-col gap-4 rounded-xl p-6"
-            // onSubmit={(e) => e.preventDefault()}
-            
           >
             <input type="hidden" name="form-name" value="contact" />
+
             <div>
-              <label
-                htmlFor="name"
-                className="mb-1.5 block text-sm font-medium text-foreground"
-              >
+              <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-foreground">
                 Name
               </label>
               <input
                 id="name"
+                name="name"
                 type="text"
                 placeholder="Your name"
                 className="w-full rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
+
             <div>
-              <label
-                htmlFor="email"
-                className="mb-1.5 block text-sm font-medium text-foreground"
-              >
+              <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-foreground">
                 Email
               </label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 placeholder="your@email.com"
                 className="w-full rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
+
             <div>
-              <label
-                htmlFor="message"
-                className="mb-1.5 block text-sm font-medium text-foreground"
-              >
+              <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-foreground">
                 Message
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
                 placeholder="Tell me about your project or opportunity..."
                 className="w-full resize-none rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
+
             <button
               type="submit"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-all hover:opacity-90"
@@ -122,8 +117,71 @@ export function ContactSection() {
               Send Message
             </button>
           </form>
+          
         </div>
       </div>
     </section>
   )
 }
+
+
+
+// <form
+//             className="glass flex flex-col gap-4 rounded-xl p-6"
+//             name="contact"
+//             method="POST"
+//             data-netlify="true"
+//             // onSubmit={(e) => e.preventDefault()}
+            
+//           >
+//             <input type="hidden" name="form-name" value="contact" />
+//             <div>
+//               <label
+//                 htmlFor="name"
+//                 className="mb-1.5 block text-sm font-medium text-foreground"
+//               >
+//                 Name
+//               </label>
+//               <input
+//                 id="name"
+//                 type="text"
+//                 placeholder="Your name"
+//                 className="w-full rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+//               />
+//             </div>
+//             <div>
+//               <label
+//                 htmlFor="email"
+//                 className="mb-1.5 block text-sm font-medium text-foreground"
+//               >
+//                 Email
+//               </label>
+//               <input
+//                 id="email"
+//                 type="email"
+//                 placeholder="your@email.com"
+//                 className="w-full rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+//               />
+//             </div>
+//             <div>
+//               <label
+//                 htmlFor="message"
+//                 className="mb-1.5 block text-sm font-medium text-foreground"
+//               >
+//                 Message
+//               </label>
+//               <textarea
+//                 id="message"
+//                 rows={4}
+//                 placeholder="Tell me about your project or opportunity..."
+//                 className="w-full resize-none rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+//               />
+//             </div>
+//             <button
+//               type="submit"
+//               className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-all hover:opacity-90"
+//             >
+//               <Send className="h-4 w-4" />
+//               Send Message
+//             </button>
+//           </form>
