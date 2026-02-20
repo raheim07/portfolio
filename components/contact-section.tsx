@@ -64,8 +64,14 @@ export function ContactSection() {
           {/* Contact form */}
           <form
             className="glass flex flex-col gap-4 rounded-xl p-6"
-            onSubmit={(e) => e.preventDefault()}
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            className="glass flex flex-col gap-4 rounded-xl p-6"
+            // onSubmit={(e) => e.preventDefault()}
+            
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label
                 htmlFor="name"
